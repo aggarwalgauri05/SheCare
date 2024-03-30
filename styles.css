@@ -8,34 +8,28 @@ ul {
 /* Header styles */
 header {
     position: relative;
-    /* Set position relative for absolute positioning */
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #00286e;
     /* Dark blue background color */
 }
 
 header h1 {
     margin-bottom: 20px;
-    /* Adjust spacing between header and navigation bar */
     color: #ffffff;
-    /* White text color */
+    font-size: 50px;
 }
 
 /* Contact info styles */
 .contact-info {
     position: absolute;
     top: 20px;
-    /* Adjust top position as needed */
     right: 20px;
-    /* Adjust right position as needed */
     color: #ffffff;
-    /* White text color */
 }
 
 .contact-info p {
     margin: 5px 0;
-    /* Adjust margin for each contact detail */
 }
 
 /* Navigation bar styles */
@@ -49,61 +43,135 @@ nav ul {
 
 nav ul li {
     display: inline;
-    /* Display menu items in a single line */
     margin-right: 10px; /* Reduce space between menu items */
 }
 
 nav ul li:last-child {
     margin-right: 0;
-    /* Remove margin from the last menu item */
 }
 
 nav ul li a {
     color: #ffffff;
-    /* White text color */
     text-decoration: none;
     padding: 10px 20px;
-    /* Adjust padding as needed */
     background-color: transparent;
-    /* Transparent background color */
     transition: background-color 0.3s;
-    /* Smooth transition on hover */
     text-transform: uppercase;
-    /* Capitalize menu text */
 }
 
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    /* Semi-transparent white background color on hover */
 }
+
 /* Content area styles */
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide the content area into two equal columns */
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 20px;
-  }
-  
-  .left {
-    background-size: cover; /* Cover the entire container with the background image */
-    background-position: center; /* Center the background image */
-  }
-  
-  .right {
+}
+
+.left {
+    background-size: cover;
+    background-position: center;
+}
+
+.right {
     display: flex;
-    justify-content: flex-end; /* Align button to the right */
-  }
-  
-  .book-appointment {
+    justify-content: flex-end;
+}
+
+.book-appointment {
     padding: 10px 20px;
     background-color: #00286e;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .book-appointment:hover {
+}
+
+.book-appointment:hover {
     background-color: #0044a3;
+}
+
+.img_deg {
+    max-width: 320px;
+    float: left;
+    margin-right: 20px;
+}
+
+.home-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.home-content img {
+    max-width: 320px;
+    float: left;
+    margin-right: 20px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    color: #00286e;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 23px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.home-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Our Mission section styles */
+.additional-content {
+  background-color: #e6d0ff; /* Lighter lilac background color */
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center; /* Align text in center */
+}
+
+.additional-content h2 {
+  font-size: 48px; /* Bigger font size */
+  color: #3a2a5e; /* Darker lilac text color */
+  margin-bottom: 20px;
+}
+
+.additional-content p {
+  font-size: 24px; /* Bigger font size */
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.additional-content {
+  animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideRight {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
   }
-  
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
