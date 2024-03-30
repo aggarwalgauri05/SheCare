@@ -1,0 +1,109 @@
+/* Reset default margin and padding */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    /* Set position relative for absolute positioning */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00286e;
+    /* Dark blue background color */
+}
+
+header h1 {
+    margin-bottom: 20px;
+    /* Adjust spacing between header and navigation bar */
+    color: #ffffff;
+    /* White text color */
+}
+
+/* Contact info styles */
+.contact-info {
+    position: absolute;
+    top: 20px;
+    /* Adjust top position as needed */
+    right: 20px;
+    /* Adjust right position as needed */
+    color: #ffffff;
+    /* White text color */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    /* Adjust margin for each contact detail */
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap; /* Prevent menu items from wrapping */
+}
+
+nav ul li {
+    display: inline;
+    /* Display menu items in a single line */
+    margin-right: 10px; /* Reduce space between menu items */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Remove margin from the last menu item */
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* White text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    background-color: transparent;
+    /* Transparent background color */
+    transition: background-color 0.3s;
+    /* Smooth transition on hover */
+    text-transform: uppercase;
+    /* Capitalize menu text */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Semi-transparent white background color on hover */
+}
+/* Content area styles */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide the content area into two equal columns */
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left {
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+  }
+  
+  .right {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+  }
+  
+  .book-appointment {
+    padding: 10px 20px;
+    background-color: #00286e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-appointment:hover {
+    background-color: #0044a3;
+  }
+  
