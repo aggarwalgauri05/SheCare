@@ -174,4 +174,103 @@ nav ul li a:hover {
       opacity: 1;
       transform: translateX(0);
   }
+}/* Add your CSS styles here */
+
+/* Content area styles */
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center the content */
+    font-size: 24px; /
 }
+
+/* FAQ item styles */
+.faq-item {
+    background-color: #f8c1c1;
+    border: 1px solid #f48181;
+    border-radius: 5px;
+    padding: 20px;
+    height: auto; /* Change height to auto to allow for variable content */
+    transition: height 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Question styles */
+.question {
+    font-size: 22px;
+    color: #5b0404;
+    margin-bottom: 10px;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+
+/* Answer styles */
+.answer {
+    font-size: 22px;
+    color: #290303;
+    opacity: 0; /* Initially hide answer content */
+    max-height: 0; /* Initially collapse answer content */
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Apply styles when FAQ item is expanded */
+.faq-item.expanded {
+    height: auto; /* Allow height to expand */
+}
+
+.faq-item.expanded .answer {
+    max-height: 200px; /* Set max height for answer content */
+    opacity: 1; /* Show answer content */
+}
+/* Content area animation */
+.content {
+    animation: fadeInContent 1s ease forwards;
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FAQ section title animation */
+.content h2 {
+    animation: slideInTitle 0.5s ease forwards;
+}
+
+@keyframes slideInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FAQ item animation */
+.faq-item {
+    animation: slideInFAQ 0.5s ease forwards;
+}
+
+@keyframes slideInFAQ {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
