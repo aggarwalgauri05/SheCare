@@ -273,4 +273,86 @@ nav ul li a:hover {
     }
 }
 
-
+/* Blog section styles */
+#blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #aaa2f9; /* Add a background color to the blog section */
+  }
+  
+  .blog-post {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Lighter background color */
+    border-radius: 10px; /* Increase border radius for softer edges */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease forwards; /* Add animation */
+  }
+  
+  .blog-post img {
+    width: 120px; /* Increase image width for better visibility */
+    height: auto;
+    border-radius: 10px; /* Match border radius with container */
+    margin-right: 20px;
+  }
+  
+  .blog-post-content {
+    flex: 1;
+  }
+  
+  .blog-post h2 {
+    font-size: 28px; /* Increase font size for better readability */
+    color: #00286e;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease forwards; /* Add animation */
+  }
+  
+  .blog-post p {
+    font-size: 18px; /* Increase font size for better readability */
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease forwards; /* Add animation */
+  }
+  
+  .blog-post a {
+    display: inline-block;
+    background-color: #00286e;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px; /* Increase padding for better touch target */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    animation: fadeIn 0.5s ease forwards; /* Add animation */
+  }
+  
+  .blog-post a:hover {
+    background-color: #0044a3;
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
