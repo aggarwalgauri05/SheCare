@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {heading:'Sterilization(Tube Ligation)',body:'99% effective <br> Lasts for life',link:'sterilization.html'},
         {heading:'Vasectomy',body:'99% effective <br> Lasts for life',link:'vasectomy.html'},
         {heading:'Birth Control Shot',body:'96% effective <br> Get every 3 months',link:'ControlShot.html'},
-        {heading:'Cervical Cap',body:'71-86 % effective <br> Use every time',link:'carvicalCap.html'}
+        {heading:'Cervical Cap',body:'71-86 % effective <br> Use every time',link:'cervicalCap.html'}
         // Add more objects for additional boxes as needed
     ];
 
